@@ -23,7 +23,7 @@ public class MovieEntity {
     
      Cnxion conn = new Cnxion();
 
-    public void addFilm(Movie e) {
+    public void addMovie(Movie e) {
 
         conn.toConnect();
         Statement stmt;
