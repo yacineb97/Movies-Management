@@ -21,7 +21,7 @@ public class Cnxion {
         String password = "";
         
         
-        String url = "jdbc:mysql://localhost/MovieManagement?useSSL=false";
+        String url = "jdbc:mysql://localhost/movies-management?useSSL=false";
  
         try{
             Class.forName("com.mysql.jdbc.Driver");
@@ -31,7 +31,7 @@ public class Cnxion {
         }
         try{
             con = DriverManager.getConnection(url, username, password);
-            System.out.println("OK connexion réussie...");
+            System.out.println("OK Connection established..");
             stmt = con.createStatement();
  
         }

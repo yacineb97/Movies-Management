@@ -35,7 +35,7 @@ public class MovieEntity {
         
         try {
             // Selection et parcours
-            stmt.execute("INSERT INTO  Film(  Title ,  Genre ,  Year ) VALUES ('" + e.getTitle()+ "','" + e.getGenre()+ "','" + e.getYear()+ "')");
+            stmt.execute("INSERT INTO  movie(  Title ,  Genre ,  Year ) VALUES ('" + e.getTitle()+ "','" + e.getGenre()+ "','" + e.getYear()+ "')");
 
             JOptionPane.showMessageDialog(null, "Movie added with Success !", "Success Message.",
                     JOptionPane.INFORMATION_MESSAGE);
